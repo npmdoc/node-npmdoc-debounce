@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"debounce",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "debounce",
+    "description": "api documentation for [debounce (v1.0.0)](https://github.com/component/debounce) [![npm package](https://img.shields.io/npm/v/npmdoc-debounce.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-debounce) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-debounce.svg)](https://travis-ci.org/npmdoc/node-npmdoc-debounce)",
     "devDependencies": {
         "debounce": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-debounce",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-debounce",
+    "keywords": [
+        "documentation",
+        "debounce"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_debounce.js",
+    "name": "npmdoc-debounce",
+    "nameAlias": "npmdoc_debounce",
+    "nameOriginal": "npmdoc-debounce",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-debounce"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
