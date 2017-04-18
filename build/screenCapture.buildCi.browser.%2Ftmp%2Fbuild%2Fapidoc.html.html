@@ -54,12 +54,65 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.debounce">module debounce</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.debounce.debounce">
+            function <span class="apidocSignatureSpan"></span>debounce
+            <span class="apidocSignatureSpan">(func, wait, immediate)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.debounce" id="apidoc.module.debounce">module debounce</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.debounce.debounce" id="apidoc.element.debounce.debounce">
+        function <span class="apidocSignatureSpan"></span>debounce
+        <span class="apidocSignatureSpan">(func, wait, immediate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function debounce(func, wait, immediate){
+  var timeout, args, context, timestamp, result;
+  if (null == wait) wait = 100;
+
+  function later() {
+    var last = now() - timestamp;
+
+    if (last &lt; wait &amp;&amp; last &gt; 0) {
+      timeout = setTimeout(later, wait - last);
+    } else {
+      timeout = null;
+      if (!immediate) {
+        result = func.apply(context, args);
+        if (!timeout) context = args = null;
+      }
+    }
+  };
+
+  return function debounced() {
+    context = this;
+    args = arguments;
+    timestamp = now();
+    var callNow = immediate &amp;&amp; !timeout;
+    if (!timeout) timeout = setTimeout(later, wait);
+    if (callNow) {
+      result = func.apply(context, args);
+      context = args = null;
+    }
+
+    return result;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
