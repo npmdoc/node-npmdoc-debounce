@@ -1,9 +1,14 @@
-# api documentation for  [debounce (v1.0.0)](https://github.com/component/debounce)  [![npm package](https://img.shields.io/npm/v/npmdoc-debounce.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-debounce) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-debounce.svg)](https://travis-ci.org/npmdoc/node-npmdoc-debounce)
+# npmdoc-debounce
+
+#### api documentation for  [debounce (v1.0.0)](https://github.com/component/debounce)  [![npm package](https://img.shields.io/npm/v/npmdoc-debounce.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-debounce) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-debounce.svg)](https://travis-ci.org/npmdoc/node-npmdoc-debounce)
+
 #### Creates and returns a new debounced version of the passed function that will postpone its execution until after wait milliseconds have elapsed since the last time it was invoked
 
-[![NPM](https://nodei.co/npm/debounce.png?downloads=true)](https://www.npmjs.com/package/debounce)
+[![NPM](https://nodei.co/npm/debounce.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/debounce)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-debounce/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-debounce_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-debounce/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-debounce/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-debounce/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-debounce/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-debounce/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-debounce/build/screenCapture.npmPackageListing.svg)
 
@@ -48,109 +53,83 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "mattmueller",
-            "email": "mattmuelle@gmail.com"
+            "name": "mattmueller"
         },
         {
-            "name": "jongleberry",
-            "email": "jonathanrichardong@gmail.com"
+            "name": "jongleberry"
         },
         {
-            "name": "tootallnate",
-            "email": "nathan@tootallnate.net"
+            "name": "tootallnate"
         },
         {
-            "name": "clintwood",
-            "email": "clint@anotherway.co.za"
+            "name": "clintwood"
         },
         {
-            "name": "thehydroimpulse",
-            "email": "dnfagnan@gmail.com"
+            "name": "thehydroimpulse"
         },
         {
-            "name": "tjholowaychuk",
-            "email": "tj@vision-media.ca"
+            "name": "tjholowaychuk"
         },
         {
-            "name": "rauchg",
-            "email": "rauchg@gmail.com"
+            "name": "rauchg"
         },
         {
-            "name": "retrofox",
-            "email": "rdsuarez@gmail.com"
+            "name": "retrofox"
         },
         {
-            "name": "coreh",
-            "email": "thecoreh@gmail.com"
+            "name": "coreh"
         },
         {
-            "name": "forbeslindesay",
-            "email": "forbes@lindesay.co.uk"
+            "name": "forbeslindesay"
         },
         {
-            "name": "kelonye",
-            "email": "kelonyemitchel@gmail.com"
+            "name": "kelonye"
         },
         {
-            "name": "yields",
-            "email": "yields@icloud.com"
+            "name": "yields"
         },
         {
-            "name": "anthonyshort",
-            "email": "antshort@gmail.com"
+            "name": "anthonyshort"
         },
         {
-            "name": "ianstormtaylor",
-            "email": "ian@ianstormtaylor.com"
+            "name": "ianstormtaylor"
         },
         {
-            "name": "cristiandouce",
-            "email": "cristian@gravityonmars.com"
+            "name": "cristiandouce"
         },
         {
-            "name": "swatinem",
-            "email": "arpad.borsos@googlemail.com"
+            "name": "swatinem"
         },
         {
-            "name": "stagas",
-            "email": "gstagas@gmail.com"
+            "name": "stagas"
         },
         {
-            "name": "amasad",
-            "email": "amjad.masad@gmail.com"
+            "name": "amasad"
         },
         {
-            "name": "juliangruber",
-            "email": "julian@juliangruber.com"
+            "name": "juliangruber"
         },
         {
-            "name": "shtylman",
-            "email": "shtylman@gmail.com"
+            "name": "shtylman"
         },
         {
-            "name": "calvinfo",
-            "email": "calvin@calv.info"
+            "name": "calvinfo"
         },
         {
-            "name": "dominicbarnes",
-            "email": "dominic@dbarnes.info"
+            "name": "dominicbarnes"
         },
         {
-            "name": "timoxley",
-            "email": "secoif@gmail.com"
+            "name": "timoxley"
         },
         {
-            "name": "stephenmathieson",
-            "email": "me@stephenmathieson.com"
+            "name": "stephenmathieson"
         },
         {
-            "name": "trevorgerhardt",
-            "email": "trevorgerhardt@gmail.com"
+            "name": "trevorgerhardt"
         }
     ],
     "name": "debounce",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/component/debounce.git"
@@ -159,16 +138,6 @@
     "version": "1.0.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module debounce](#apidoc.module.debounce)
-
-
-
-# <a name="apidoc.module.debounce"></a>[module debounce](#apidoc.module.debounce)
 
 
 
